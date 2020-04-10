@@ -1,0 +1,173 @@
+.main {
+	width: 380px;
+	height: 420px;
+	font-family: "Times New Roman", Times, serif;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #616161;
+}
+
+.add-command {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.add {
+	background-color: #E91E63;
+	padding: 8px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.add:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.submit {
+	background-color: #E91E63;
+	padding: 8px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.submit-command {
+	background-color: #E91E63;
+	padding: 8px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.submit:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.add:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.header-text {
+	font-size: 20px;
+}
+
+.add-section {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.section-body {
+	margin-top: 10px;
+}
+
+.section-input {
+	width: 100%;
+	border-radius: 1px;
+}
+
+.command-input {
+	width: 100%;
+	border-radius: 1px;
+}
+
+.command-body {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sections {
+	margin-top: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-header {
+	color: #D81B60;
+	font-size: 22px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-body {
+	color: #757575;
+	font-size: 18px;
+	margin-top: 8px;
+	word-wrap: break-word;
+}
+
+.remove {
+	cursor: pointer;
+}
+
+.edit {
+	cursor: pointer;
+}
+
+.command-add {
+    cursor: pointer;
+}
+
+.edit-command {
+	cursor: pointer;
+}
+
+.remove-command {
+	cursor: pointer;
+}
+
+.show-all {
+	cursor: pointer;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.empty {
+	font-size: 30px;
+	color: #757575;
+	padding: 10px;
+	position: absolute;
+	top: 300px;
+	display: none;
+	z-index: -1;
+}
