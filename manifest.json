@@ -5,7 +5,7 @@
   "version": "1.0",
 
   "description": "An addon store events",
-  "homepage_url": "https://github.com/djmgit/todo-webext",
+  "homepage_url": "https://github.com/djmgit/quickcheat",
   "icons": {
     "32": "icons/todo.png"
   },
@@ -14,10 +14,6 @@
     "default_icon": "icons/todo.png",
     "default_title": "QuickCheat",
     "default_popup": "popup/quickcheat.html"
-  },
-
-  "background": {
-    "scripts": ["background.js"]
   },
 
   "permissions": ["storage", "contextMenus", "activeTab", "tabs"]

@@ -60,6 +60,7 @@ $(document).ready(function() {
 			localStorage.pageContent = JSON.stringify(pageNotes);
 			$(".page-note-content").html(noteContent);
 			$(".page-note-content").slideDown();
+			$(".page-body").val("");
 			
 		});
 	}
