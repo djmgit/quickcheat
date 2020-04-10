@@ -102,10 +102,33 @@
 	border-radius: 1px;
 }
 
+.page-body {
+	width: 100%;
+	border-radius: 1px;
+}
+
 .sections {
 	margin-top: 18px;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+.site-notes {
+	margin-top: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.page-notes-show {
+	cursor: pointer;
+}
+
+.page-notes-remove {
+	cursor: pointer;
+}
+
+.page-notes-edit {
+	cursor: pointer;
 }
 
 .card {

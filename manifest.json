@@ -20,6 +20,6 @@
     "scripts": ["background.js"]
   },
 
-  "permissions": ["storage", "contextMenus", "activeTab"]
+  "permissions": ["storage", "contextMenus", "activeTab", "tabs"]
   
 }

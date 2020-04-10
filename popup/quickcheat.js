@@ -5,6 +5,30 @@ $(document).ready(function() {
     $(".add").click(function() {
 	    $(".add-section").slideToggle();
 	});
+
+	$(".page-note-content").hide();
+	$(".add-page-note").hide();
+
+	var currentTabUrl = "";
+
+	function onSucess(tabs){
+		console.log(tabs[0]);
+	}
+
+	// get current current tab url
+
+	browser.tabs.query({
+		currentWindow: true,
+		active: true
+	}).then(onSucess);
+
+	$(".page-notes-show").click(function() {
+		$(".page-note-content").slideToggle();
+	});
+
+	$(".page-notes-edit").click(function() {
+		$(".add-page-note").slideToggle();
+	});
     
     var sections = [];
     
@@ -123,7 +147,7 @@ $(document).ready(function() {
 								"<div class='card-body'>" +
 										"<div class='add-command'>" +
 											"<input type='text' class='command-head command-input' placeholder='Command tile or usecase or anything (should be unique in this section)...'>" +
-											"<textarea rows='4' cols='2' class='command-head command-body' placeholder='Note text ...'></textarea>" +
+											"<textarea rows='4' cols='2' class='command-head command-body' placeholder='Rocking command...'></textarea>" +
 											"<div class='submit-command'>" +																									
         										"<img src='done.svg'>" +																									
 											"</div>" +
