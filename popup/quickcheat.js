@@ -10,13 +10,61 @@ $(document).ready(function() {
 	$(".add-page-note").hide();
 
 	var currentTabUrl = "";
+	var pageNotes = [];
 
 	function onSucess(tabs){
-		console.log(tabs[0]);
+		
+		currentTabUrl = tabs[0].url;
+		setupPageNote();
+	}
+
+	function setupPageNote() {
+		if (!localStorage.pageContent || localStorage.pageContent == "[]"){
+			$(".page-note-content").html("<strong> No notes for this page yet </strong>");
+		} else {
+
+			pageNotes = JSON.parse(localStorage.pageContent);
+			var curNote = pageNotes.filter(function(item) {
+				return item["url"] == currentTabUrl;
+			});
+
+			if (curNote.length == 0) {
+				$(".page-note-content").html("<strong> No notes for this page yet </strong>");
+			} else {
+				$(".page-note-content").html(curNote[0].note);
+			}
+		}
+
+		$(".submit-page-note").click(function() {
+			var noteContent = $(".page-body").val();
+	
+			if (noteContent.length === 0) {
+				return
+			}
+	
+			newNote = {
+				"url": currentTabUrl,
+				"note": noteContent
+			}
+	
+			var curNote = pageNotes.filter(function(item) {
+				return item["url"] == currentTabUrl;
+			});
+	
+			if (curNote.length == 0) {
+				pageNotes.unshift(newNote);
+			} else {
+				curNote[0]["note"] = noteContent;
+			}
+	
+			localStorage.pageContent = JSON.stringify(pageNotes);
+			$(".page-note-content").html(noteContent);
+			$(".page-note-content").slideDown();
+			
+		});
 	}
 
 	// get current current tab url
-
 	browser.tabs.query({
 		currentWindow: true,
 		active: true

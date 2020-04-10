@@ -24,6 +24,13 @@
 	justify-content: space-between;
 }
 
+.add-page-note {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .add {
 	background-color: #E91E63;
 	padding: 8px;
@@ -35,6 +42,10 @@
 
 .add:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.page-note-content {
+	margin-top: 20px;
 }
 
 .submit {
@@ -49,6 +60,17 @@
 }
 
 .submit-command {
+	background-color: #E91E63;
+	padding: 8px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.submit-page-note {
 	background-color: #E91E63;
 	padding: 8px;
 	border-radius: 20px;
