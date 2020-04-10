@@ -98,8 +98,8 @@
 }
 
 .command-body {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	width: 100%;
+	border-radius: 1px;
 }
 
 .sections {
@@ -170,4 +170,8 @@
 	top: 300px;
 	display: none;
 	z-index: -1;
+}
+
+.cheat-commands {
+	margin-top: 20px;
 }

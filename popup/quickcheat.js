@@ -31,8 +31,6 @@ $(document).ready(function() {
 	    	sections.unshift(section);
 	    } else {
 			// Show error, duplication section
-
-			console.log("test")
 	    	return
 	    }
     
@@ -125,7 +123,7 @@ $(document).ready(function() {
 								"<div class='card-body'>" +
 										"<div class='add-command'>" +
 											"<input type='text' class='command-head command-input' placeholder='Command tile or usecase or anything (should be unique in this section)...'>" +
-											"<textarea rows='4' cols='2' class='command-head command-input' placeholder='Note text ...'></textarea>" +
+											"<textarea rows='4' cols='2' class='command-head command-body' placeholder='Note text ...'></textarea>" +
 											"<div class='submit-command'>" +																									
         										"<img src='done.svg'>" +																									
 											"</div>" +
@@ -178,17 +176,24 @@ $(document).ready(function() {
 			localStorage.quickcheat = JSON.stringify(sections);
 	        getSections();
 		});
+
+		$(".edit-command").click(function() {
+			var commandTitle = $(this).parent().prev().text();
+			var commandBody = $(this).parent().parent().next().text();
+
+			$(this).parent().parent().parent().parent().prev().children().first().val(commandTitle);
+			$(this).parent().parent().parent().parent().prev().children().first().next().val(commandBody);
+			$(this).parent().parent().parent().parent().prev().slideDown();
+		});
 		
 		$(".submit-command").click(function() {
-			var sectionTitle = $(this).parent().parent().prev().text()
+			var sectionTitle = $(this).parent().parent().prev().text();
 			
 			section = sections.filter(function(item) {
 				return item["title"] === sectionTitle;
 			});
 
 			section = section[0];
-
-			console.log(section);
 
 			commandTitle = $(this).prev().prev().val();
 			commandBody = $(this).prev().val();
@@ -207,14 +212,15 @@ $(document).ready(function() {
 			}
 
 			var duplicate = section.cheats.filter(function(item) {
-				item["title"] == newCommand.title;
+				return item["title"] === newCommand.title;
 			});
 
 			if (duplicate.length !== 0) {
-				return;
+				duplicate[0].body = newCommand.body;
+			} else {
+				section.cheats.unshift(newCommand);
 			}
 
-			section.cheats.unshift(newCommand);
 			localStorage.quickcheat = JSON.stringify(sections);
 
 			getSections();
