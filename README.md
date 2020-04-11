@@ -61,7 +61,7 @@ A webpage note can be added using the following steps:
 - Try openning the same page again in a different tab or window and press on the more/vertical icom, you should be
   able to see your note. You can update your note anytime.
   
-<img src="github_assets/note.gif">
+<img src="github_assets/notes.gif">
   
 
   
