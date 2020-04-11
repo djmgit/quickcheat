@@ -36,6 +36,19 @@ Also, the extension right now works only in Firefox properly due to some APIs br
 - The extension will be loaded into the browser as a browser action (button). Clicking on that button will open the
   main popup.
   
+## Command cheatsheets
+
+You can add new tool and creat cheats using the following steps:
+
+- Open the QuickChear popup
+- Select the big plus button, enter the name of the tool/technology you want to add and confirm.
+- Once the technology is added, a card will be created.
+- To add a command/note, press on the plus button on the corresponding card, give a suitable title and add the actual command
+  or note.
+- You can edit or remove your command or tool card whenever you desire.
+- It is to be notes that, your tool name should be unique, that is, it should not be already present and also, your
+  command/note tiltle should be unique for a particular tool.
+  
 
   
   
