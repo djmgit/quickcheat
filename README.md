@@ -49,6 +49,8 @@ You can add new tool and creat cheats using the following steps:
 - It is to be notes that, your tool name should be unique, that is, it should not be already present and also, your
   command/note tiltle should be unique for a particular tool.
   
+<img src="github_assets/commands.gif">
+  
 
   
   
