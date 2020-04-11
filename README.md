@@ -17,4 +17,26 @@ that command the next time.
   that activity for sometime. You come back after quite some time, and now you want to know where you had left, what was your
   progress and what issues you were facing, or may be a note you want to remind you self with. you can do this very easily
   with QuickCheat. With QuickCheat you can take different custom notes for different web page and then look them up whenever
-  you go back to that page later.
+  you go back to that page later
+
+## Installation
+
+This is a work in progress and there is yet no packaged version. So in order to test it you can load it temporarily in
+your browser using the following steps.
+
+Also, the extension right now works only in Firefox properly due to some APIs breaking in Google Chrome.
+
+**Firefox:**
+
+- Clone this repository.
+- Open Firefox
+- Open ```about:debugging``` page
+- Select ```This Firefox```
+- Select ```Load temporary extension``` then browse to this reposiroty and open any file from the repository.
+- The extension will be loaded into the browser as a browser action (button). Clicking on that button will open the
+  main popup.
+  
+
+  
+  
+
