@@ -63,7 +63,10 @@ A webpage note can be added using the following steps:
   
 <img src="github_assets/notes.gif">
   
+## Contributing
 
+QuickCheat is a work in progress and if contributions and most welcome. If you want to add any feature or fix any bug, please
+create an issue and send a pull request.
   
   
 
