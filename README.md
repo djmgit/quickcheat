@@ -46,10 +46,22 @@ You can add new tool and creat cheats using the following steps:
 - To add a command/note, press on the plus button on the corresponding card, give a suitable title and add the actual command
   or note.
 - You can edit or remove your command or tool card whenever you desire.
-- It is to be notes that, your tool name should be unique, that is, it should not be already present and also, your
+- It is to be notes that, your tool name should be unique, that is, it should not be quickalready present and also, your
   command/note tiltle should be unique for a particular tool.
   
 <img src="github_assets/commands.gif">
+
+## Webpage note
+
+A webpage note can be added using the following steps:
+
+- Open QuickCheat popup.
+- Press on the edit icon beside ```Web Page Notes``` title in the first card.
+- Enter whatever note you want to take for the current web page and confirm.
+- Try openning the same page again in a different tab or window and press on the more/vertical icom, you should be
+  able to see your note. You can update your note anytime.
+  
+<img src="github_assets/note.gif">
   
 
   
