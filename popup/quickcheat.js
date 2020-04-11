@@ -76,6 +76,7 @@ $(document).ready(function() {
 	});
 
 	$(".page-notes-edit").click(function() {
+		$(".page-body").val($(".page-note-content").text());
 		$(".add-page-note").slideToggle();
 	});
     
